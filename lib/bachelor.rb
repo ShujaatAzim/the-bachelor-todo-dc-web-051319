@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
     contestant.each do |contestant_info|
       contestant_info.each do |attribute, value|
       if [attribute][value] == "Winner"
-        first_name = [attribute][:name].to_s
+        first_name = [attribute][:name]
         first_name.split(" ")
           return first_name[0]
         end
