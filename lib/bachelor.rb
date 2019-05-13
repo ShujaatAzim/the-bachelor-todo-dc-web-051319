@@ -4,6 +4,9 @@ def get_first_name_of_season_winner(data, season)
       if attribute[value] == "Winner"
         full_name = attribute["name"]
         return full_name.split(" ").first
+      end
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
